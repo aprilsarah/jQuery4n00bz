@@ -1,0 +1,186 @@
+/* Global */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #8a8683;
+	background-color:#efefef;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hidden {
+	display:none;
+}
+
+.red {
+	background-color: #ff0000!important;
+}
+
+h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#fff;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2em;
+	color: #fff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+/* Navigation */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color: #cc3266;
+	z-index:100;
+	color: #fff;
+	border-bottom: solid 5px #650e31;
+}
+
+#game {
+	background-color: #333;
+	height:650px;
+	border: solid 5px #650e31;
+}
+
+#bob {
+	background-color: #cc3266;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 270px;
+	left:0;
+	right:0px;
+	margin:auto;
+	border-radius: 50%;
+}
+
+#bob h2{
+	position: relative;
+	top: 96px;
+	left: 53px;
+}
+
+#changes {
+	position: relative;
+	top: 64px;
+	left: 37px;
+}
+
+.floater {
+	position: fixed;
+  z-index: 999;
+  overflow: auto;
+	margin: auto;
+  top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #cc3266;
+	color: #FFF;
+	border: solid 5px #650e31;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+	padding: 20px;
+	width: 500px;
+	height: 400px;
+}
+
+.button {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px 20px;
+	text-align: center;
+	background: #650e31;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.button:hover {
+  background: #a32451;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#changes .button {
+	display: inline-block;
+	width: 125px;
+	margin: 10px;
+}
+
+.go {
+	margin-top: 95px;
+}
+
+#left {
+	margin-right: .75%;
+}
+
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+	#decorative {
+		display:none;
+	}
+
+	#content {
+		text-align:center;
+		width:100%;
+	}
+
+	 h1 {
+		line-height: 1em;
+	}
+	 h2 {
+		line-height: 1em;
+	}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+	h1 {
+		line-height: 1em;
+	}
+	h2 {
+		line-height: 1em;
+	}
+
+}
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>N00bz - level 2</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#ready").slideDown(3000); // .slideToggle()
+			
+			$(".wuss").click(function() {
+				$("#ready").fadeOut(3000, function(){
+					$("#wussy").show(); 
+				});
+			});
+			
+			$(".heckyes").click(function(){ 
+				$("#ready").slideToggle(3000, function(){ // .slideUp()
+					$("#bob").fadeTo(3000, 1);
+					$("#changes").fadeTo(3000, .5); //use any number between 0 & 1
+				}); 
+			});
+		});
+	</script>
+	
+</head>
+
+<body>
+	<div id="ready" class="floater hidden">
+		<h1>Are you ready?</h1>
+		<p>Here we have some text nonsense that is asking if you have the guts, ego, and stamina to continue on in this quest... or journey... or whatever this thing is.</p>
+		<p>So do you?</p>
+		<p><a href="#" class="button heckyes">Heck Yes!</a></p>
+		<p><a href="#" class="button wuss">No I don't think so.</a></p>
+	</div>
+	
+	<div id="wussy" class="floater hidden">
+		<h1>Really?!?</h1>
+		<p>You really clicked no? Why would you do that? What is the point?</p>
+		<p>It would have been a lot cooler if you had clicked yes. I'm just saying. Now you are stuck here. So much fun right?</p>
+	</div>
+	
+	<div class="menu">
+		<div class="container clearfix">
+
+			<div id="head" class="grid_12">
+				<p>N00bz Demo-y Stuff</p>
+			</div>
+
+		</div>
+	</div>
+	
+	<div>
+		<div class="container clearfix">
+
+			<div id="left" class="grid_1">
+				<p><a href="level1.html" class="button go"><</a></p>
+			</div>
+			
+			<div id="game" class="grid_10 omega">
+			
+				<div id="bob" class="hidden"></div>
+				
+				<div id="changes" class="hidden">
+					<p><a href="#" class="button fat">Fat Bob</a> <a href="#" class="button skinny">Skinny Bob</a> <a href="#" class="button tall">Tall Bob</a> <a href="#" class="button short">Short Bob</a></p>
+				</div>
+			
+			</div>
+			
+			<div id="left" class="grid_1 omega">
+			<p><a href="level3.html" class="button go">></a></p>
+			</div>
+
+		</div>
+	</div>
+
+	
+</body>
+</html>

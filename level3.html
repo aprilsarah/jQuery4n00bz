@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>N00bz - level 3</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$(".fat").click(function() {
+				$("#bob").width($("#bob").width() + 50);
+			});
+			
+			/*for cool animated width change
+			$(".fat").click(function() {
+				$("#bob").animate({
+    			width: $("#bob").width() + 50
+  			}, 2000);
+			});*/
+			
+			$(".skinny").click(function() {
+				$("#bob").width(100); 
+				// percentages and em as well: $("#bob").width("10%");
+			});
+			
+			$(".tall").click(function() {
+				$("#bob").height(300);
+			});
+			
+			$(".short").click(function() {
+				$("#bob").height(100);
+			});
+		});
+	</script>
+	
+</head>
+
+<body>
+	
+	
+	<div class="menu">
+		<div class="container clearfix">
+
+			<div id="head" class="grid_12">
+				<p>N00bz Demo-y Stuff</p>
+			</div>
+
+		</div>
+	</div>
+	
+	<div>
+		<div class="container clearfix">
+
+			<div id="left" class="grid_1">
+				<p><a href="level2.html" class="button go"><</a></p>
+			</div>
+			
+			<div id="game" class="grid_10 omega">
+			
+				<div id="bob" class=""></div>
+				
+				<div id="changes" class="">
+					<p><a href="#" class="button fat">Fat Bob</a> <a href="#" class="button skinny">Skinny Bob</a> <a href="#" class="button tall">Tall Bob</a> <a href="#" class="button short">Short Bob</a></p>
+				</div>
+			
+			</div>
+			
+			<div id="left" class="grid_1 omega">
+				<p><a href="level4.html" class="button go">></a></p>
+			</div>
+
+		</div>
+	</div>
+
+	
+</body>
+</html>
